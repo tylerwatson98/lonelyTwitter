@@ -5,7 +5,6 @@ import android.test.ActivityInstrumentationTestCase2;
 import com.robotium.solo.Solo;
 
 public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 <LonelyTwitterActivity>{
-
     private Solo solo;
     public LonelyTwitterActivityTest(){
         super(LonelyTwitterActivity.class);
@@ -22,6 +21,6 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 
     }
 
     public void testTweet(){
-        solo.assertCurrentActivity("Wrong Acitivty","ABC");
+        solo.assertCurrentActivity("Wrong Acitivty", "LonelyTwitterActivity");
     }
 }
