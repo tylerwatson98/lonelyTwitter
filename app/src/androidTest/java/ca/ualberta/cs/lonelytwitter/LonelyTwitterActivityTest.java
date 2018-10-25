@@ -23,4 +23,8 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 
     public void testTweet(){
         solo.assertCurrentActivity("Wrong Acitivty", "LonelyTwitterActivity");
     }
+
+    public void testEquals() {
+        assertEquals("not equal", "4", "5");
+    }
 }
