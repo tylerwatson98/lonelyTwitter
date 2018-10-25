@@ -27,4 +27,8 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 
     public void testEquals() {
         assertEquals("not equal", "4", "5");
     }
+
+    public void testAddTweet() {
+
+    }
 }
