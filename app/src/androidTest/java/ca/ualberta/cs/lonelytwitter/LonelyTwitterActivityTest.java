@@ -1,6 +1,7 @@
 package ca.ualberta.cs.lonelytwitter;
 
 import android.test.ActivityInstrumentationTestCase2;
+import android.widget.EditText;
 
 import com.robotium.solo.Solo;
 
@@ -25,10 +26,12 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 
     }
 
     public void testEquals() {
-        assertEquals("not equal", "4", "5");
+        assertEquals("not equal", "t", "5");
     }
 
     public void testAddTweet() {
-
+        solo.enterText((EditText) solo.getView(R.id.body), "don't know");
+        solo.clickOnButton("save");
+        assertTrue(solo.waitForText("don't know"));
     }
 }
