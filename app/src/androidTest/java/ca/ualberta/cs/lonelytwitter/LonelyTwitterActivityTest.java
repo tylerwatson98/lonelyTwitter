@@ -32,6 +32,7 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 
     public void testAddTweet() {
         solo.enterText((EditText) solo.getView(R.id.body), "don't know");
         solo.clickOnButton("save");
+        solo.clearEditText((EditText) solo.getView(R.id.body));
         assertTrue(solo.waitForText("don't know"));
     }
 }
